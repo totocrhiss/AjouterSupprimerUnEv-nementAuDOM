@@ -1,0 +1,195 @@
+@font-face {
+    font-family: CrispyTofu;
+    src: url("./logo-Font-Icone/CrispyTofu.ttf");
+}
+
+@font-face {
+    font-family: SpicyTaste;
+    src: url("logo-Font-Icone/SpicyTaste.ttf");
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    margin: 2em 5em 0 0;
+    padding: 0 0 0 2em;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shopping {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-right: 0px;
+}
+
+#Ajouter {
+    margin-right: -2em;
+    width: 12em;
+}
+
+.textGreenButton {
+    position: absolute;
+    text-align: center;
+    right: 16em;
+    top: 5.5em;
+    font-family: SpicyTaste;
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+    opacity: 0;
+    transition: 3s;
+}
+
+#Supprimer {
+    position: relative;
+    right: -3em;
+    width: 12em;
+}
+
+.textRedButton {
+    position: absolute;
+    text-align: center;
+    right: 6.5em;
+    top: 5.5em;
+    font-family: SpicyTaste;
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+    opacity: 0;
+    transition: 3s;
+}
+
+.TxtBtn {
+    opacity: 1;
+}
+
+.shopping {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.logo {
+    min-width: 15em;
+}
+
+.textLogo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: SpicyTaste;
+    transform: scaleY(1.2);
+}
+
+.shop {
+    padding: 0;
+    margin: 0;
+    width: 2em;
+    text-align: center;
+    font-size: 4em;
+}
+
+#shop {
+    display: none;
+    transition: 1s;
+}
+
+#shop:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    color: green;
+    transition: 1s;
+}
+
+.article {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    left: 19%;
+    top: -12%;
+    width: 1em;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(196, 196, 196);
+}
+
+.article p {
+    margin: 0;
+    padding: 0;
+}
+
+.animationAchat {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    opacity: 0;
+    background: url(./logo-Font-Icone/chariot-manuel.svg);
+    width: 100px;
+    height: 100px;
+}
+
+.startAnimation {
+    opacity: 1;
+    left: 65%;
+    top: 50%;
+    height: 300px;
+    width: 300px;
+    transition-property: opacity, left, top, height, width;
+    transition-duration: 3s, 5s, 3s, 5s, 5s;
+}
+
+section div p {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+    transform: scaleY(0);
+    font-family: CrispyTofu;
+    width: 20em;
+    height: auto;
+    /* transition: <propriété> <durée> <timing-function> <retard>; */
+    /* transition: <property> <duration> <timing-function> <delay>; */
+    transition: text-shadow 2s 6s, color 7s 5s, transform 2s 4s;
+}
+
+.endText {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+    transform: scaleY(2);
+    font-family: CrispyTofu;
+    width: 20em;
+    height: auto;
+    color: red;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.596);
+    -webkit-text-stroke: 0.03em rgb(0, 0, 0);
+}
